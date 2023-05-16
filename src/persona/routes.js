@@ -19,6 +19,8 @@ router.post("/ingresoRol", controller.ingresoRol)
 router.get("/nombre/:idpersona", controller.rolPagosNombre)
 router.get("/cargo/:idpersona", controller.getCargo)
 router.get("/rolId/:idpersona", controller.getIdRol )
+
+
 router.get("/sueldoBasico/:idpersona", controller.getSueldo)
 router.get("/horasExtras/:idpersona", controller.getExtras)
 router.get("/comision/:idpersona", controller.getComision)

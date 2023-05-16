@@ -12,6 +12,7 @@ const rolIndividual ="select id_persona from usuarios where usuario = $1"
 const rolPagosNombre ="select nombre,apellido from personas where id_persona = $1"
 const getCargo ="select nombre_cargo from cargos where id_cargo=(select id_cargo from personas where id_persona=$1)"
 const getIdRol ="select id_rol_pago from rolpagos where id_persona = $1"
+
 const getSueldo = "select sueldo_basico from rolpagos where id_persona = $1"
 const getExtras = "select trunc(((sueldo_basico/30)/8) * horas_extras,2) as horasExtras from rolpagos where id_persona = $1"
 const getComision = "select comisiones from rolpagos where id_persona = $1"
